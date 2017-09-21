@@ -1,35 +1,35 @@
 # Modern JavaScript cheatsheet
 
-## Introduction
+## 介紹
 
 ### Motivation
 
 This document is a cheatsheet for JavaScript you will frequently encounter in modern projects and in most contemporary sample code.
 
-This guide is not intended to teach you JavaScript from the ground up, but to help developers with basic knowledge who may struggle to get familiar with modern codebases (or let's say to learn React for instance) because of the JavaScript concepts used.
+我們並不會從頭開始教你 JavaScript 的相關知識，而是幫助那些有基礎知識的開發者解決使用現代 codebase 時因一些 JavaScript 而遇到的問題（例如 React）
 
-Besides, I will sometimes provide personal tips that may be debatable, but will take care to mention that it's a personal recommendation when I do so.
+另外，我在下面可能會提到一些我個人認為可能有用的建議，不過到時候我會在下面說明。
 
-> **Note :** Most of the concepts introduced here are coming from a JavaScript language update (ES2015, often called ES6). You can find new features added by this update [here](http://es6-features.org); it's very well done.
+> **請注意：** 以下將提到的大多數 JavaScript 概念都將是 ES2015（常稱為 ES6）的新特性。你可以到[這裡](http://es6-features.org)看看，它們相當的不錯。
 
-### Complementary resources
+### 補充資料
 
-When you struggle to understand a notion, I suggest you look for answers on the following resources:
+如果你遇到了任何困難，你可以在以下地方取得協助：
 
 - [MDN (Mozilla Developer Network)](https://developer.mozilla.org/fr/search?q=)
 - [You don't know JS (book)](https://github.com/getify/You-Dont-Know-JS)
 - [ES6 Features with examples](http://es6-features.org)
 - [WesBos blog (ES6)](http://wesbos.com/category/es6/)
 - [Reddit (JavaScript)](https://www.reddit.com/r/javascript/)
-- [Google](https://www.google.com/) to find specific blog and resources
+- [Google](https://www.google.com/) 以尋找相關的部落格文章或資源
 
-## Table of contents
+## 目次
 
 - [Modern JavaScript cheatsheet](#modern-javascript-cheatsheet)
-  * [Introduction](#introduction)
+  * [介紹](#introduction)
     + [Motivation](#motivation)
-    + [Complementary resources](#complementary-resources)
-  * [Table of contents](#table-of-contents)
+    + [補充資料](#complementary-resources)
+  * [目次](#table-of-contents)
   * [Notions](#notions)
     + [Variable declaration: var, const, let](#variable-declaration-var-const-let)
       - [Short explanation](#short-explanation)
@@ -87,15 +87,15 @@ When you struggle to understand a notion, I suggest you look for answers on the 
 
 ## Notions
 
-### Variable declaration: var, const, let
+### 定義變數的關鍵字：var、const 與 let
 
-In JavaScript, there are three keywords available to declare a variable, and each has its differences. Those are ```var```, ```let``` and ```const```.
+JavaScript 提供了三個關鍵字 ```var``` 、 ```let``` 與 ```const``` 來讓開發者定義變數，且他們之前都有一些差別，以下將進行說明。
 
 #### Short explanation
 
-Variables declared with ```const``` keyword can't be reassigned, while ```let``` and ```var``` can.
+使用 ```const``` 定義的變數不能再重新賦值，不過 ```let``` 與 ```var``` 可以。
 
-I recommend always declaring your variables with ```const``` by default, and with ```let``` if you need to *mutate* it or reassign it later.
+我建議永遠都使用 ```const``` 來定義變數，如果你稍後要對進行 reassigning 或 **mutating** 的話可以使用 ```let```。
 
 <table>
   <tr>
@@ -108,23 +108,23 @@ I recommend always declaring your variables with ```const``` by default, and wit
   <tr>
     <th>const</th>
     <td>Block</td>
-    <td>No</td>
-    <td>Yes</td>
-    <td>No</td>
+    <td>不可以</td>
+    <td>可以</td>
+    <td>不可以</td>
   </tr>
   <tr>
     <th>let</th>
     <td>Block</td>
-    <td>Yes</td>
-    <td>Yes</td>
-    <td>No</td>
+    <td>可以</td>
+    <td>可以</td>
+    <td>不可以</td>
   </tr>
    <tr>
     <th>var</th>
     <td>Function</td>
-    <td>Yes</td>
-    <td>Yes</td>
-    <td>Yes</td>
+    <td>可以</td>
+    <td>可以</td>
+    <td>可以</td>
   </tr>
 </table>
 
