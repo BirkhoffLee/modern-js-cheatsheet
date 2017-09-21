@@ -1100,11 +1100,11 @@ myBoundFunc("test") // "hello" -- myBoundFunc is person.myFunc with "hello" boun
 
 ### Class
 
-JavaScript is a [prototype-based](https://en.wikipedia.org/wiki/Prototype-based_programming) language (whereas Java is [class-based](https://en.wikipedia.org/wiki/Class-based_programming) language, for instance). ES6 has introduced JavaScript classes which are meant to be a syntactic sugar for prototype-based inheritance and **not** a new class-based inheritance model ([ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)).
+JavaScript 是一個[以原型（prototype）為基礎的](https://en.wikipedia.org/wiki/Prototype-based_programming)程式語言（例如 Java 是[以 class 為基礎的](https://en.wikipedia.org/wiki/Class-based_programming)程式語言）。ES6 has introduced JavaScript classes which are meant to be a syntactic sugar for prototype-based inheritance and **not** a new class-based inheritance model ([ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)).
 
 The word *class* is indeed error prone if you are familiar with classes in other languages. If you do, avoid assuming how JavaScript classes work on this basis and consider it an entirely different notion.
 
-Since this document is not an attempt to teach you the language from the ground up, I will consider you know what prototypes are and how they behave. But here are some links I found great to understand this notion:
+因為這份文件不是要從頭開始教你 JavaScript 的相關知識，我預設你知道什麼是原型（prototype）且他們是如何運作的。下面是一些我找到的關於原型的不錯的資料：
 
 - [Understanding Prototypes in JS - Yehuda Katz](http://yehudakatz.com/2011/08/12/understanding-prototypes-in-javascript/)
 - [A plain english guide to JS prototypes - Sebastian Porto](http://sporto.github.io/blog/2013/02/22/a-plain-english-guide-to-javascript-prototypes/)
@@ -1112,7 +1112,7 @@ Since this document is not an attempt to teach you the language from the ground 
 
 #### Samples
 
-Before ES6, prototype syntax:
+在 ES6 之前，這是使用 prototype 語法的做法:
 
 ```js
 var Person = function(name, age) {
@@ -1124,7 +1124,7 @@ Person.prototype.stringSentence = function() {
 }
 ```
 
-With ES6 class syntax:
+如果使用 ES6 的 class 語法：
 
 ```js
 class Person {
